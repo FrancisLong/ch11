@@ -32,7 +32,7 @@ public class CustomerDao {
 				//1.2 获取连接
 				conn = ConnectionFactory.getConn();
 				//3. 创建pstmt对象
-				String sql = "insert into rj12_customer(name,password,age) "
+				String sql = "insert into e_customer(name,password,age) "
 						+ "values(?,?,?)";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, customer.getName());
